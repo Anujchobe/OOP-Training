@@ -21,8 +21,30 @@ class number
     {
         cout<<"Constructor with 3 para"<<endl;
     }
-
 };
+class copyconstructor
+{
+    int no1,no2;
+    public:
+    void show();
+    copyconstructor(){}
+    copyconstructor(int x,int y)
+    {
+        no1=x;
+        no2=y;
+    }
+    copyconstructor(copyconstructor &obj)
+    {
+        no1=obj.no1;
+        no2=obj.no2;
+    }
+};
+
+void copyconstructor::show()
+{
+    cout<<"N01: "<<no1<<endl;
+    cout<<"no2"<<no2<<endl;
+}
 
 void number::get()
     {
@@ -58,5 +80,8 @@ int main()
     n2.get();
     n2.min();
     n2.max();
+    copyconstructor o1(3,5);
+    copyconstructor o2(o1);
+    o2.show();
     return 0;
 }
