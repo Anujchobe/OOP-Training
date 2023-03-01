@@ -1,0 +1,4 @@
+local var : camelCase
+global var : Capitalcase
+const : CAPS 
+function name : meaningful 
