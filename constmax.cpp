@@ -43,7 +43,7 @@ class copyconstructor
 void copyconstructor::show()
 {
     cout<<"N01: "<<no1<<endl;
-    cout<<"no2"<<no2<<endl;
+    cout<<"N02"<<no2<<endl;
 }
 
 void number::get()
