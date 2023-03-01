@@ -18,6 +18,8 @@ class number
 void number::get()
     {
         cout<<x<<endl;
+        cout<<y<<endl;
+        cout<<z<<endl;
     }
 int number::max()
 {
