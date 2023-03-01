@@ -77,8 +77,6 @@ int animal::set()
     return 0;
 }
 
-
-
 int main()
 {
     animal a1;
