@@ -8,9 +8,18 @@ class number
     void get();
     int min();
     int max();
+    number()
+    {
+        cout<<"Default constructor"<<endl;
+    }
+    number(int a,int b)
+    {
+            x=a;
+            y=b;
+    }
     number(int a,int b,int c)
     {
-        x=a,y=b,z=c;
+        cout<<"Constructor with 3 para"<<endl;
     }
 
 };
@@ -19,7 +28,6 @@ void number::get()
     {
         cout<<x<<endl;
         cout<<y<<endl;
-        cout<<z<<endl;
     }
 int number::max()
 {
@@ -45,8 +53,10 @@ int main()
     cout<<"Enter c: "<<endl;
     cin>>c;
     number n1(a,b,c);
-    n1.get();
-    n1.min();
-    n1.max();
+    number n2(a,b);
+    number n3();
+    n2.get();
+    n2.min();
+    n2.max();
     return 0;
 }
