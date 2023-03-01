@@ -3,14 +3,14 @@ using namespace std;
 
 class number
 {
-    int x,y;
+    int x,y,z;
     public:
     void get();
     int min();
     int max();
-    number()
+    number(int a,int b,int c)
     {
-        x=10,y=20;
+        x=a,y=b,z=c;
     }
 
 };
@@ -35,7 +35,14 @@ int number::min()
 }
 int main()
 {
-    number n1;
+    int a,b,c;
+    cout<<"Enter a: "<<endl;
+    cin>>a;
+    cout<<"Enter b: "<<endl;
+    cin>>b;
+    cout<<"Enter c: "<<endl;
+    cin>>c;
+    number n1(a,b,c);
     n1.get();
     n1.min();
     n1.max();
