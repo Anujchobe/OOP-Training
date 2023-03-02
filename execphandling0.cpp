@@ -2,28 +2,43 @@
 #include<iostream>
 using namespace std;
 
-int main()
+int checklessthan0(int a)
 {
-    try
+        try
     {
-        string e="Divide by zero error";
-        int a,b;
-        cout<<"Enter first no.: ";
-        cin>>a;
-        cout<<"Enter second number: ";
-        cin>>b;
-        if (a<0)
+         if (a<0)
         throw a;
-        if(b==0)
-        throw e;
     }
     catch (int a)
     {
         cout<<"First number Negative: "<<a<<endl;
     }
-    catch(string e)
+}
+
+int checknegative(int b)
+{
+    string e="Divide by zero error";
+    try
+    {
+        if(b==0)
+        throw b;         
+    }
+    catch(int b)
     {
         cout<<e<<endl;
     }
+    
+}
+int main()
+{
+        
+        int a,b;
+        cout<<"Enter first no.: ";
+        cin>>a;
+        cout<<"Enter second number: ";
+        cin>>b;               
+        checklessthan0(a);
+        checknegative(b);
+        
     return 0;
 }
