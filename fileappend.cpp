@@ -13,6 +13,6 @@ int main()
     outfile<<data<<endl;
     cout<<"Enter ph no.";
     cin.getline(data,10);
-    outfile<<data<<endl;
+    outfile<<data;
     return 0;
 }
