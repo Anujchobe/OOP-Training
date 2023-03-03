@@ -1,16 +1,22 @@
 #include<iostream>
 using namespace std;
 
-template<class t>
- void fun(t n)
+
+template<typename T, typename U>
+
+
+ void fun1(T a ,U b)
  {
-    cout<<"\nNumber is: "<<n;
+    cout<<"\nFirst: "<<a;
+    cout<<"\nSecond: "<<b;
  }
 
 int main()
 {
-    fun(5);
-    fun("Hello World");
-    fun(5.5);
+    fun1(5,10);
+    fun1("Hello World",8);
+    fun1(5.5,"a");
+    fun1(5,5);
+    
     return 0;
 }
